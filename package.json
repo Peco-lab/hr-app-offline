@@ -1,0 +1,25 @@
+{
+  "name": "hr-app-offline",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Offline-first HR app for small business: attendance, leave, payroll, and employee documents. No internet/cloud required.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "dist": "electron-builder"
+  },
+  "build": {
+    "appId": "com.pecolab.hrapp",
+    "productName": "HR App Offline",
+    "files": ["**/*", "!.github/**", "!*.md", "!build/icon-source.svg"],
+    "icon": "build/icon.png",
+    "win": { "target": "nsis", "icon": "build/icon.ico" },
+    "mac": { "target": "dmg", "icon": "build/icon.icns" },
+    "linux": { "target": "AppImage", "icon": "build/icon.png" }
+  },
+  "devDependencies": {
+    "electron": "*",
+    "electron-builder": "*"
+  }
+}

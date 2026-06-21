@@ -1,0 +1,35 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1C2D34"/>
+      <stop offset="100%" stop-color="#111C21"/>
+    </linearGradient>
+    <radialGradient id="goldGlow" cx="78%" cy="18%" r="55%">
+      <stop offset="0%" stop-color="#C98A1F" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#C98A1F" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="stampShine" cx="34%" cy="26%" r="65%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="goldFill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#DDA53A"/>
+      <stop offset="100%" stop-color="#B9842E"/>
+    </linearGradient>
+  </defs>
+
+  <!-- rounded-square app tile background -->
+  <rect width="1024" height="1024" rx="196" fill="url(#bg)"/>
+  <rect width="1024" height="1024" rx="196" fill="url(#goldGlow)"/>
+
+  <!-- dashed outer ring (perforation motif, echoed from in-app brand mark) -->
+  <circle cx="512" cy="512" r="332" fill="none" stroke="#8FA09C" stroke-width="6" stroke-dasharray="10 22" opacity="0.4"/>
+
+  <!-- gold stamp -->
+  <circle cx="512" cy="512" r="288" fill="url(#goldFill)"/>
+  <circle cx="512" cy="512" r="288" fill="url(#stampShine)"/>
+  <circle cx="512" cy="512" r="288" fill="none" stroke="#7A5A18" stroke-width="4" opacity="0.25"/>
+
+  <text x="512" y="600" font-family="Georgia, 'Times New Roman', serif" font-size="300" font-weight="700"
+        fill="#1A2A30" text-anchor="middle">HR</text>
+</svg>
