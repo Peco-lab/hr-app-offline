@@ -1,6 +1,5 @@
 <div align="center">
 
-<img src="./.github/assets/banner.svg" alt="HR App — Offline Edition" width="100%" />
 
 <br/>
 
